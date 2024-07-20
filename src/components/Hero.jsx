@@ -15,13 +15,13 @@ export default function Hero() {
           </span>
           <p className="text-slate-400 font-extrabold mt-4 text-xl md:text-5xl">Software Developer.</p>
 
-          <p className="font-bold mt-4 text-blue-400 text-center md:text-left">I'm a passionate Fullstack web developer with hands-on 
+          <p className="font-bold mt-4 text-slate-400 text-center md:text-left">I'm a passionate Fullstack web developer with hands-on 
             experience in building web applications using React.js & Next.js, Django, Flask, Gin, Fiber 
             with TypeScript, Javascript, Python, Golang, TailwindCSS, MongoDB and Postgresql.
           </p>
         </div>
 
-        <div className="flex md:flex-col md:space-y-4 space-x-4 md:space-x-0 mt-2 md:mt-0 border border-slate-300 p-2 rounded-lg hover:bg-slate-950">
+        <div className="flex md:flex-col md:space-y-4 space-x-4 md:space-x-0 mt-2 md:mt-0 p-2 rounded-lg hover:bg-slate-950">
           <Github/>
           <Linkedin/>
           <Facebook/>
@@ -30,9 +30,13 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="mt-4">
-        <span className="animate-ping h-10 w-10 rounded-full bg-green-400 opacity-75"></span>
-        <a href="#contact" className="text-blue-400 font-semibold cursor-pointer hover:underline">Available for freelance work</a>
+      <div className="mt-4 flex items-center rounded-lg space-x-1">
+        <div class="relative flex h-3 w-3">
+          <div class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></div>
+          <div class="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></div>
+        </div>
+
+        <a href="#contact" className="text-blue-400 font-semibold cursor-pointer">Available for freelance work</a>
       </div>
     </section>
   )

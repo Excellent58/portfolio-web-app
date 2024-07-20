@@ -3,10 +3,10 @@ import { AlignRight, X } from 'lucide-react'
 
 
 const navigation = [
-    { name: 'About', href: '#about' },
-    { name: 'TechStack', href: '#techstack' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Contact', href: '#contact' },
+  { name: 'About', href: '#about' },
+  { name: 'TechStack', href: '#techstack' },
+  { name: 'Projects', href: '#projects' },
+  { name: 'Contact', href: '#contact' },
 ]
 
 export default function NavBar() {
@@ -33,7 +33,7 @@ export default function NavBar() {
           </a>
         </div>
 
-        <div className={MobileMenuOpen ? 'fixed bg-slate-800 top-16 flex flex-col w-full h-screen' : 'space-x-10 lg:space-x-20 hidden sm:flex nav-link pr-2'}>
+        <div className={MobileMenuOpen ? 'fixed bg-slate-800 top-16 flex flex-col w-full h-screen z-50' : 'space-x-10 lg:space-x-20 hidden sm:flex nav-link pr-2'}>
           {navigation.map((item) => (
             <a
               key={item.name}
