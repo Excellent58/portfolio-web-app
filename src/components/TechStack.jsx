@@ -2,6 +2,11 @@
 
 export default function TechStack() {
   return (
-    <section>Techstack</section>
+    <section>
+      <div>
+        <div className="icons"></div>
+        <div className="image"></div>
+      </div>
+    </section>
   )
 }
