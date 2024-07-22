@@ -4,8 +4,8 @@ export default function Hero() {
   return (
     <section className="m-6">
       <div className="flex md:space-x-10 flex-col md:flex-row items-center">
-        <div className="flex flex-col items-center md:items-start">
-          <h1 className="text-blue-400">
+        <div className="flex flex-col md:items-start">
+          <h1 className="text-blue-400 text-2xl">
             Hi, I am  
           </h1>
           <span>
@@ -15,7 +15,7 @@ export default function Hero() {
           </span>
           <p className="text-slate-400 font-extrabold mt-4 text-xl md:text-5xl">Software Developer.</p>
 
-          <p className="font-bold mt-4 text-slate-400 text-center md:text-left">I'm a passionate Fullstack web developer with hands-on 
+          <p className="font-bold mt-4 text-slate-400 md:text-left">I'm a passionate Fullstack web developer with hands-on 
             experience in building web applications using React.js & Next.js, Django, Flask, Gin, Fiber 
             with TypeScript, Javascript, Python, Golang, TailwindCSS, MongoDB and Postgresql.
           </p>
