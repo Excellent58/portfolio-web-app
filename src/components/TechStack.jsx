@@ -20,81 +20,69 @@ export default function TechStack() {
     <section className="m-6 mt-0">
       <h2 className="font-bold text-lg text-blue-400">TechStack</h2>
       <div className="flex flex-col md:flex-row md:justify-between md:space-x-80">
-        <div className="icons grid grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-x-5 gap-y-5 content-center">
-          <div class="p-4 flex items-center justify-center">
-            <img src={PythonIcon} alt="python Logo" class="w-10 h-10 mr-2"/>
-            {/* <span class="text-sm font-medium">python</span> */}
+        <div className="border grid grid-cols-4 gap-x-5 gap-y-5 md:grid-cols-6 lg:grid-cols-7">
+          <div className="w-10 h-10 mr-2 flex items-center justify-center">
+            <img src={PythonIcon} alt="python Logo" className=""/>
           </div>
 
-          <div class="p-4 flex items-center justify-center">
-            <img src={JsIcon} alt="HTML Logo" class="w-10 h-10 mr-2"/>
-            {/* <span class="text-sm font-medium">JavaScript</span> */}
+          <div className="w-10 h-10 mr-2">
+            <img src={JsIcon} alt="HTML Logo" className=""/>
           </div>
 
-          <div class="p-4 flex items-center justify-center">
-            <img src={GoIcon} alt="Go Logo" class="w-10 h-10 mr-2"/>
-            {/* <span class="text-sm font-medium">GO</span> */}
+          <div className="w-10 h-10 mr-2">
+            <img src={GoIcon} alt="Go Logo" className=""/>
           </div>
 
-          <div class="p-4 flex items-center justify-center">
-            <img src={HtmlIcon} alt="HTML Logo" class="w-10 h-10 mr-2"/>
-            {/* <span class="text-sm font-medium">HTML</span> */}
+          <div className="w-10 h-10 mr-2">
+            <img src={HtmlIcon} alt="HTML Logo" className=""/>
           </div>
 
-          <div class="p-4 flex items-center justify-center">
-            <img src={CssIcon} alt="CSS Logo" class="w-10 h-10 mr-2"/>
-            {/* <span class="text-sm font-medium">CSS</span> */}
+          <div className="w-10 h-10 mr-2">
+            <img src={CssIcon} alt="CSS Logo" className=""/>
           </div>                
           
-          <div class="p-4 flex items-center justify-center">
-            <img src={TailwindIcon} alt="Tailwind Logo" class="w-10 h-10 mr-2"/>
-            {/* <span class="text-sm font-medium">Tailwind</span> */}
+          <div className="w-10 h-10 mr-2">
+            <img src={TailwindIcon} alt="Tailwind Logo" className=""/>
           </div>
 
-          <div class="p-4 flex items-center justify-center">
-            <img src={ReactIcon} alt="react Logo" class="w-10 h-10 mr-2"/>
-            {/* <span class="text-sm font-medium">React</span> */}
+          <div className="w-10 h-10 mr-2">
+            <img src={ReactIcon} alt="react Logo" className=""/>
           </div>
 
-          <div class="p-4 flex items-center justify-center">
-            <img src={DjangoIcon} alt="django Logo" class="w-10 h-10 mr-2"/>
-            {/* <span class="text-sm font-medium">Django</span> */}
+          <div class="w-10 h-10 mr-2">
+            <img src={DjangoIcon} alt="django Logo" className=""/>
           </div>
 
-          <div class="p-4 flex items-center justify-center">
-            <img src={FlaskIcon} alt="flask Logo" class="w-10 h-10 mr-2"/>
-            {/* <span class="text-sm font-medium">Flask</span> */}
+          <div class="w-10 h-10 mr-2">
+            <img src={FlaskIcon} alt="flask Logo" className=""/>
           </div>
 
-          <div class="p-4 flex items-center justify-center">
-            <img src={GinIcon} alt="flask Logo" class="w-10 h-10 mr-2"/>
-            {/* <span class="text-sm font-medium">Gin</span> */}
+          <div className="w-10 h-10 mr-2">
+            <img src={GinIcon} alt="flask Logo" className=""/>
           </div>
 
-          <div class="p-4 flex items-center justify-center">
-            <img src={FiberIcon} alt="flask Logo" class="w-10 h-10 mr-2"/>
-            {/* <span class="text-sm font-medium">Fiber</span> */}
+          <div className="w-10 h-10 mr-2">
+            <img src={FiberIcon} alt="flask Logo" class=""/>
           </div>
 
-          <div class="p-4 flex items-center justify-center">
-            <img src={PostgresIcon} alt="flask Logo" class="w-10 h-10 mr-2"/>
-            {/* <span class="text-sm font-medium">Postgres</span> */}
+          <div className="w-10 h-10 mr-2">
+            <img src={PostgresIcon} alt="flask Logo" className=""/>
           </div>
 
-          <div class="p-4 flex items-center justify-center">
-            <img src={MongoIcon} alt="flask Logo" class="w-10 h-10 mr-2"/>
-            {/* <span class="text-sm font-medium">MongoDB</span> */}
+          <div className="w-10 h-10 mr-2">
+            <img src={MongoIcon} alt="flask Logo" className=""/>
           </div>
 
-          <div class="p-4 flex items-center justify-center">
-            <img src={GitIcon} alt="git Logo" class="w-10 h-10 mr-2"/>
-            {/* <span class="text-sm font-medium">Git</span> */}
+          <div className="w-10 h-10 mr-2">
+            <img src={GitIcon} alt="git Logo" className=""/>
           </div>
         </div>
+
         <div className="image">
           <img
             src={TechStackImage}
-            
+            height={600}
+            width={500}
             alt="about"
           />
         </div>
