@@ -1,5 +1,7 @@
 export default function Contact() {
   return (
-    <section>Contact</section>
+    <section>
+      <p>0758053919</p>
+    </section>
   )
 }
