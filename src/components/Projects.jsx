@@ -52,8 +52,8 @@ export default function Projects() {
               <div className="flex flex-row justify-between">
                 <p>Python | Nextjs</p>
                 <div className="flex space-x-4">
-                  <Github/>
-                  <ExternalLink/>
+                  <a href="/"><Github/></a>
+                  <a href="/"><ExternalLink/></a>
                 </div>
               </div>
             </div>
