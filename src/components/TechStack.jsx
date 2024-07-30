@@ -17,65 +17,37 @@ import GitIcon from "../assets/images/skills/git.svg"
 
 export default function TechStack() {
   return (
-    <section className="m-6 mt-0">
+    <section className="m-6 mt-0" id="techstack">
       <h2 className="font-bold text-lg text-blue-400">TechStack</h2>
-      <div className="flex flex-col md:flex-row md:justify-between md:space-x-80">
-        <div className="border grid grid-cols-4 gap-x-5 gap-y-5 md:grid-cols-6 lg:grid-cols-7">
-          <div className="w-10 h-10 mr-2 flex items-center justify-center">
-            <img src={PythonIcon} alt="python Logo" className=""/>
-          </div>
+      <div className="flex flex-col md:flex-row md:justify-between md:items-center">
+        <div className="grid grid-cols-4 gap-5 sm:gap-10 md:gap-16 md:grid-cols-6 lg:grid-cols-7">
+          <img src={PythonIcon} alt="python Logo" className="w-10 h-10"/>
 
-          <div className="w-10 h-10 mr-2">
-            <img src={JsIcon} alt="HTML Logo" className=""/>
-          </div>
+          <img src={JsIcon} alt="HTML Logo" className="w-10 h-10"/>
 
-          <div className="w-10 h-10 mr-2">
-            <img src={GoIcon} alt="Go Logo" className=""/>
-          </div>
+          <img src={GoIcon} alt="Go Logo" className="w-10 h-10"/>
 
-          <div className="w-10 h-10 mr-2">
-            <img src={HtmlIcon} alt="HTML Logo" className=""/>
-          </div>
+          <img src={HtmlIcon} alt="HTML Logo" className="w-10 h-10"/>
 
-          <div className="w-10 h-10 mr-2">
-            <img src={CssIcon} alt="CSS Logo" className=""/>
-          </div>                
-          
-          <div className="w-10 h-10 mr-2">
-            <img src={TailwindIcon} alt="Tailwind Logo" className=""/>
-          </div>
+          <img src={CssIcon} alt="CSS Logo" className="w-10 h-10"/>             
+        
+          <img src={TailwindIcon} alt="Tailwind Logo" className="w-10 h-10"/>
 
-          <div className="w-10 h-10 mr-2">
-            <img src={ReactIcon} alt="react Logo" className=""/>
-          </div>
+          <img src={ReactIcon} alt="react Logo" className="w-10 h-10"/>
 
-          <div class="w-10 h-10 mr-2">
-            <img src={DjangoIcon} alt="django Logo" className=""/>
-          </div>
+          <img src={DjangoIcon} alt="django Logo" className="w-10 h-10"/>
 
-          <div class="w-10 h-10 mr-2">
-            <img src={FlaskIcon} alt="flask Logo" className=""/>
-          </div>
+          <img src={FlaskIcon} alt="flask Logo" className="w-10 h-10"/>
 
-          <div className="w-10 h-10 mr-2">
-            <img src={GinIcon} alt="flask Logo" className=""/>
-          </div>
+          <img src={GinIcon} alt="flask Logo" className="w-10 h-10"/>
 
-          <div className="w-10 h-10 mr-2">
-            <img src={FiberIcon} alt="flask Logo" class=""/>
-          </div>
+          <img src={FiberIcon} alt="flask Logo" class="w-10 h-10"/>
 
-          <div className="w-10 h-10 mr-2">
-            <img src={PostgresIcon} alt="flask Logo" className=""/>
-          </div>
+          <img src={PostgresIcon} alt="flask Logo" className="w-10 h-10"/>
 
-          <div className="w-10 h-10 mr-2">
-            <img src={MongoIcon} alt="flask Logo" className=""/>
-          </div>
+          <img src={MongoIcon} alt="flask Logo" className="w-10 h-10"/>
 
-          <div className="w-10 h-10 mr-2">
-            <img src={GitIcon} alt="git Logo" className=""/>
-          </div>
+          <img src={GitIcon} alt="git Logo" className="w-10 h-10"/>
         </div>
 
         <div className="image">
