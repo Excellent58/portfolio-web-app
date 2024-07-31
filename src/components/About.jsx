@@ -2,12 +2,12 @@ import AboutImage from "../assets/images/about.png";
 
 export default function About() {
   return (
-    <section className="m-6 mt-0">
+    <section className="m-6 mt-28">
       <div className="flex flex-col md:flex-row md:justify-between">
         <div className="md:w-3/4">
           <h2 className="font-bold text-lg text-blue-400">About Me</h2>
 
-          <div className="md:mt-5">
+          <div className="mt-5">
             <p className="pb-5">
             Hi, My Name Is Wycliffe Musau, a computer science undergraduate. I am a
             fullstack Developer. I love to approach problems and solve them pragmattically.

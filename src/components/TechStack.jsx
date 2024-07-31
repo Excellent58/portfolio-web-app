@@ -17,9 +17,9 @@ import GitIcon from "../assets/images/skills/git.svg"
 
 export default function TechStack() {
   return (
-    <section className="m-6 mt-0" id="techstack">
+    <section className="m-6 mt-28" id="techstack">
       <h2 className="font-bold text-lg text-blue-400">TechStack</h2>
-      <div className="flex flex-col md:flex-row md:justify-between md:items-center">
+      <div className="mt-5 flex flex-col md:flex-row md:justify-between md:items-center">
         <div className="grid grid-cols-4 gap-5 sm:gap-10 md:gap-16 md:grid-cols-6 lg:grid-cols-7">
           <img src={PythonIcon} alt="python Logo" className="w-10 h-10"/>
 
