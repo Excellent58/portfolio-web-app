@@ -25,7 +25,7 @@ export default function NavBar() {
   }, [MobileMenuOpen])
 
   return (
-    <header className='inset-x-0 top-0 z-50'>
+    <header className='inset-x-0 top-0 z-50 font-primary'>
       <nav className='flex items-center justify-between h-16 lg:px-8'>
         <div className='p-2'>
           <a href="/" className='font-signature font-bold'>
