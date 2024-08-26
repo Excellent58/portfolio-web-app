@@ -21,10 +21,6 @@ export default function Contact() {
             <Phone size={24}/>
             <p>+254 758 053 919</p>
           </div>
-          <div className="mt-6 flex justify-center space-x-4">
-            <Phone size={24}/>
-            <p>kenya, nairobi</p>
-          </div>
         </div>
       </div>
 
