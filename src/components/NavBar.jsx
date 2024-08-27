@@ -25,9 +25,9 @@ export default function NavBar() {
   }, [MobileMenuOpen])
 
   return (
-    <header className='inset-x-0 top-0 z-50 font-primary'>
+    <header className='inset-x-0 top-0 z-50'>
       <nav className='flex items-center justify-between h-16 lg:px-8'>
-        <div className='p-2'>
+        <div className='ml-5 lg:ml-0'>
           <a href="/" className='font-signature font-bold'>
             Wycliffe Musau
           </a>
@@ -46,7 +46,7 @@ export default function NavBar() {
           ))}
         </div>
 
-        <div className='sm:hidden'>
+        <div className='sm:hidden mr-4'>
           {MobileMenuOpen ? 
 
             <X

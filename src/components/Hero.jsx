@@ -1,36 +1,51 @@
 import { Github, Linkedin, Facebook, Twitter, Instagram} from "lucide-react"
+import ProfileImage from "../assets/images/profile.jpeg";
 
 export default function Hero() {
   return (
     <section className="m-6 mt-10">
-      <div className="flex flex-col md:flex-row">
+      <div className="flex flex-col md:flex-row justify-between">
         <div className="flex flex-col md:items-start md:w-[65%]">
-          <h1 className="text-blue-400 text-2xl">
+          <h1 className="text-slate-300 text-2xl">
             Hi, I am  
           </h1>
           <span>
-            <strong className="text-slate-300 font-extrabold text-xl md:text-5xl"> 
-              Wycliffe Musau.
+            <strong className="text-blue-400 font-extrabold text-xl md:text-6xl"> 
+              Wycliffe Musau 
             </strong>
           </span>
-          <p className="text-slate-400 font-extrabold mt-4 text-xl md:text-5xl">Software Developer.</p>
+          <p className="text-blue-400 font-extrabold mt-4 text-xl md:text-6xl">Software Developer</p>
 
-          <p className="font-bold mt-4 text-slate-400 md:text-left">I'm a passionate Fullstack web developer with hands-on 
+          <p className="font-bold mt-4 text-lg text-slate-300 md:text-left">I'm a passionate Fullstack web developer with hands-on 
             experience in building web applications using React.js & Next.js, Django, Flask, Gin, Fiber 
             with TypeScript, Javascript, Python, Golang, TailwindCSS, MongoDB and Postgresql.
           </p>
         </div>
 
+        <div className="flex flex-col items-center justify-center mt-2 md:mr-28">
+          <img
+            src={ProfileImage}
+            alt="about"
+            className="h-52 w-52 rounded-full"
+          />
 
+          <div className="flex space-x-4 mt-5 mb-5">
+            <a href="/" className="hover:text-blue-300"><Github/></a>
+            <a href="/" className="hover:text-blue-300"><Linkedin/></a>
+            <a href="/" className="hover:text-blue-300"><Twitter/></a>
+            <a href="/" className="hover:text-blue-300"><Facebook/></a>
+            <a href="/" className="hover:text-blue-300"><Instagram/></a>
+          </div>
+        </div>
       </div>
 
-      <div className="flex space-x-4 mt-5 mb-5">
+      {/* <div className="flex space-x-4 mt-5 mb-5 justify-center">
           <a href="/" className="hover:text-blue-300"><Github/></a>
           <a href="/" className="hover:text-blue-300"><Linkedin/></a>
           <a href="/" className="hover:text-blue-300"><Twitter/></a>
           <a href="/" className="hover:text-blue-300"><Facebook/></a>
           <a href="/" className="hover:text-blue-300"><Instagram/></a>
-        </div>
+      </div> */}
 
       <div className="mt-4 flex items-center rounded-lg space-x-1">
         <div class="relative flex h-4 w-4">
