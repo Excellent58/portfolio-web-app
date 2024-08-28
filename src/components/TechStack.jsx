@@ -15,69 +15,104 @@ import PostgresIcon from "../assets/images/skills/postgres-light.svg"
 import MongoIcon from "../assets/images/skills/mongo.svg"
 import GitIcon from "../assets/images/skills/git.svg"
 
+// import { BadgeCheck, ChevronRight } from "lucide-react"
+
+const languageIcons = [
+  {
+    name: PythonIcon,
+    key: "py",
+    alt: "python logo"
+  },
+  {
+    name: JsIcon,
+    key: "js", 
+    alt: "javascript logo"
+  },
+  {
+    name: GoIcon,
+    key: "go",
+    alt: "golang logo"
+  },
+  {
+    name: HtmlIcon,
+    key: "html",
+    alt: "html logo"
+  },
+  {
+    name: CssIcon,
+    key: "css",
+    alt: "css logo"
+  },
+  {
+    name: TailwindIcon,
+    key: "tailwindcss",
+    alt: "tailwindcss logo"
+  },
+  {
+    name: ReactIcon,
+    key: "react",
+    alt: "reactjs logo"
+  },
+  {
+    name: DjangoIcon,
+    key: "django",
+    alt: "django logo"
+  },
+  {
+    name: FlaskIcon,
+    key: "flask",
+    alt: "flask logo",
+  },
+  {
+    name: GinIcon,
+    key: "gin",
+    alt: "gin logo",
+  },
+  {
+    name: FiberIcon,
+    key: "fiber",
+    alt: "fiber logo",
+  },
+  {
+    name: PostgresIcon,
+    key: "postgres",
+    alt: "postgres logo"
+  },
+  {
+    name: MongoIcon,
+    key: "mongo",
+    alt: "mongodb logo"
+  },
+
+  {
+    name: GitIcon,
+    key: "git",
+    alt: "git logo"
+  }
+
+]
+
 export default function TechStack() {
+
   return (
     <section className="m-6 mt-28" id="techstack">
       <h2 className="font-bold text-lg text-blue-400">TechStack</h2>
-      <div className="mt-5 flex flex-col md:flex-row md:justify-between md:items-center">
-        <div className="grid grid-cols-4 gap-3 sm:gap-4 md:gap-10 md:grid-cols-6 lg:grid-cols-7">
-          <img src={PythonIcon} alt="python Logo" className="w-10 h-10"/>
-
-          <img src={JsIcon} alt="HTML Logo" className="w-10 h-10"/>
-
-          <img src={GoIcon} alt="Go Logo" className="w-10 h-10"/>
-
-          <img src={HtmlIcon} alt="HTML Logo" className="w-10 h-10"/>
-
-          <img src={CssIcon} alt="CSS Logo" className="w-10 h-10"/>             
-        
-          <img src={TailwindIcon} alt="Tailwind Logo" className="w-10 h-10"/>
-
-          <img src={ReactIcon} alt="react Logo" className="w-10 h-10"/>
-
-          <img src={DjangoIcon} alt="django Logo" className="w-10 h-10"/>
-
-          <img src={FlaskIcon} alt="flask Logo" className="w-10 h-10"/>
-
-          <img src={GinIcon} alt="flask Logo" className="w-10 h-10"/>
-
-          <img src={FiberIcon} alt="flask Logo" class="w-10 h-10"/>
-
-          <img src={PostgresIcon} alt="flask Logo" className="w-10 h-10"/>
-
-          <img src={MongoIcon} alt="flask Logo" className="w-10 h-10"/>
-
-          <img src={GitIcon} alt="git Logo" className="w-10 h-10"/>
+      <div className="mt-4">
+        <div className="grid grid-cols-4 gap-y-4 gap-x-4 box-border">
+          {languageIcons.map((icon) => (
+            <div className="h-10 w-10">
+              <img src={icon.name} alt={icon.alt} key={icon.key} className="w-full h-full"/>
+            </div>
+          ))}
         </div>
 
-        <div className="flex md:space-x-10 flex-col md:flex-row items-center md:items-start">
-          <div className="space-y-3">
-            <p className="border text-blue-400 border-slate-900 flex items-center justify-center w-20 rounded-xl bg-slate-900">Python</p>
-            <p className="border text-blue-400 border-slate-900 flex items-center justify-center w-20 rounded-xl bg-slate-900">Javascript</p>
-            <p className="border text-blue-400 border-slate-900 flex items-center justify-center w-20 rounded-xl bg-slate-900">Typescript</p>
-            <p className="border text-blue-400 border-slate-900 flex items-center justify-center w-20 rounded-xl bg-slate-900">Golang</p>
-          </div>
+      
+      </div>
+    </section>
+  )
+}
 
-          <div className="space-y-3">
-            <p className="border text-blue-400 border-slate-900 flex items-center justify-center w-20 rounded-xl bg-slate-900">React</p>
-            <p className="border text-blue-400 border-slate-900 flex items-center justify-center w-20 rounded-xl bg-slate-900">Tailwindcss</p>
-            <p className="border text-blue-400 border-slate-900 flex items-center justify-center w-20 rounded-xl bg-slate-900">Nextjs</p>
-            <p className="border text-blue-400 border-slate-900 flex items-center justify-center w-20 rounded-xl bg-slate-900">django</p>
-            <p className="border text-blue-400 border-slate-900 flex items-center justify-center w-20 rounded-xl bg-slate-900">Flask</p>
-            <p className="border text-blue-400 border-slate-900 flex items-center justify-center w-20 rounded-xl bg-slate-900">Gin</p>
-            <p className="border text-blue-400 border-slate-900 flex items-center justify-center w-20 rounded-xl bg-slate-900">Fiber</p>
-          </div>
-
-          <div className="space-y-3">
-            <p className="border text-blue-400 border-slate-900 flex items-center justify-center w-20 rounded-xl bg-slate-900">Postgresql</p>
-            <p className="border text-blue-400 border-slate-900 flex items-center justify-center w-20 rounded-xl bg-slate-900">Msql</p>
-            <p className="border text-blue-400 border-slate-900 flex items-center justify-center w-20 rounded-xl bg-slate-900">Sqlite3</p>
-            <p className="border text-blue-400 border-slate-900 flex items-center justify-center w-20 rounded-xl bg-slate-900">MongoDB</p>
-            <p className="border text-blue-400 border-slate-900 flex items-center justify-center w-20 rounded-xl bg-slate-900">Redis</p>
-          </div>
-        </div>
-
-        {/* <div className="image">
+{/* <div className="image">
           <img
             src={TechStackImage}
             height={500}
@@ -85,7 +120,3 @@ export default function TechStack() {
             alt="about"
           />
         </div> */}
-      </div>
-    </section>
-  )
-}
