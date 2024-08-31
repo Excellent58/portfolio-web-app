@@ -1,4 +1,4 @@
-import TechStackImage from "../assets/images/techstack.webp"
+// import TechStackImage from "../assets/images/techstack.webp"
 
 import PythonIcon from "../assets/images/skills/py-light.svg"
 import JsIcon from "../assets/images/skills/js.png"
@@ -98,10 +98,11 @@ export default function TechStack() {
     <section className="m-6 mt-28" id="techstack">
       <h2 className="font-bold text-lg text-blue-400">TechStack</h2>
       <div className="mt-4">
-        <div className="grid grid-cols-4 gap-y-4 gap-x-5 box-border">
+        <div className="grid grid-cols-4 gap-4">
           {languageIcons.map((icon) => (
-            <div className="h-10 w-10">
-              <img src={icon.name} alt={icon.alt} key={icon.key} className="w-full h-full"/>
+            <div className="border">
+              <img src={icon.name} alt={icon.alt} key={icon.key} className="h-10 w-10"/>
+              <span>{icon.name}</span>
             </div>
           ))}
         </div>
