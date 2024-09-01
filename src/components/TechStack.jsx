@@ -100,7 +100,7 @@ export default function TechStack() {
       <div className="mt-4">
         <div className="grid grid-cols-4 gap-4">
           {languageIcons.map((icon) => (
-            <div className="border">
+            <div className="flex flex-row">
               <img src={icon.name} alt={icon.alt} key={icon.key} className="h-10 w-10"/>
               <span>{icon.name}</span>
             </div>
