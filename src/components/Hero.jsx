@@ -16,7 +16,7 @@ export default function Hero() {
           </span>
           <p className="text-blue-400 font-extrabold mt-4 text-xl md:text-6xl">Software Developer</p>
 
-          <p className="font-bold mt-4 text-lg text-slate-300 md:text-left">I'm a passionate Fullstack web developer with hands-on 
+          <p className="font-bold mt-4 text-base md:text-lg text-slate-300 md:text-left">I'm a passionate Fullstack web developer with hands-on 
             experience in building web applications using React.js & Next.js, Django, Flask, Gin, Fiber 
             with TypeScript, Javascript, Python, Golang, TailwindCSS, MongoDB and Postgresql.
           </p>

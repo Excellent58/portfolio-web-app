@@ -1,4 +1,4 @@
-// import TechStackImage from "../assets/images/techstack.webp"
+import TechStackImage from "../assets/images/techstack.webp"
 
 import PythonIcon from "../assets/images/skills/py-light.svg"
 import JsIcon from "../assets/images/skills/js.png"
@@ -20,73 +20,73 @@ import GitIcon from "../assets/images/skills/git.svg"
 const languageIcons = [
   {
     name: PythonIcon,
-    key: "py",
+    key: "Python",
     alt: "python logo"
   },
   {
     name: JsIcon,
-    key: "js", 
+    key: "Javascript", 
     alt: "javascript logo"
   },
   {
     name: GoIcon,
-    key: "go",
+    key: "Golang",
     alt: "golang logo"
   },
   {
     name: HtmlIcon,
-    key: "html",
+    key: "HTML",
     alt: "html logo"
   },
   {
     name: CssIcon,
-    key: "css",
+    key: "CSS",
     alt: "css logo"
   },
   {
     name: TailwindIcon,
-    key: "tailwindcss",
+    key: "Tailwindcss",
     alt: "tailwindcss logo"
   },
   {
     name: ReactIcon,
-    key: "react",
+    key: "React",
     alt: "reactjs logo"
   },
   {
     name: DjangoIcon,
-    key: "django",
+    key: "Django",
     alt: "django logo"
   },
   {
     name: FlaskIcon,
-    key: "flask",
+    key: "Flask",
     alt: "flask logo",
   },
   {
     name: GinIcon,
-    key: "gin",
+    key: "Gin",
     alt: "gin logo",
   },
   {
     name: FiberIcon,
-    key: "fiber",
+    key: "Fiber",
     alt: "fiber logo",
   },
   {
     name: PostgresIcon,
-    key: "postgres",
+    key: "Postgresql",
     alt: "postgres logo"
   },
   {
     name: MongoIcon,
-    key: "mongo",
+    key: "MongoDB",
     alt: "mongodb logo"
   },
 
   {
     name: GitIcon,
-    key: "git",
+    key: "Git",
     alt: "git logo"
   }
 
@@ -97,17 +97,24 @@ export default function TechStack() {
   return (
     <section className="m-6 mt-28" id="techstack">
       <h2 className="font-bold text-lg text-blue-400">TechStack</h2>
-      <div className="mt-4">
-        <div className="grid grid-cols-4 gap-4">
+      <div className="mt-4 flex flex-col space-y-5 md:space-y-0 items-center  md:flex-row md:justify-between">
+        <div className="relative grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {languageIcons.map((icon) => (
-            <div className="flex flex-row">
+            <div className="flex flex-grow items-center space-x-2 text-sm" key={icon.key}>
               <img src={icon.name} alt={icon.alt} key={icon.key} className="h-10 w-10"/>
-              <span>{icon.name}</span>
+              <span>{icon.key}</span>
             </div>
           ))}
         </div>
 
-      
+        <div className="image">
+          <img
+            src={TechStackImage}
+            height={500}
+            width={400}
+            alt="about"
+          />
+        </div>
       </div>
     </section>
   )
@@ -121,3 +128,4 @@ export default function TechStack() {
             alt="about"
           />
         </div> */}
+
