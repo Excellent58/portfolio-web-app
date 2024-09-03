@@ -1,4 +1,4 @@
-import { Github, Linkedin, Facebook, Twitter, Instagram} from "lucide-react"
+import { Github, Linkedin, Twitter} from "lucide-react"
 import ProfileImage from "../assets/images/profile.jpeg";
 
 export default function Hero() {
@@ -33,19 +33,9 @@ export default function Hero() {
             <a href="/" className="hover:text-blue-300"><Github/></a>
             <a href="/" className="hover:text-blue-300"><Linkedin/></a>
             <a href="/" className="hover:text-blue-300"><Twitter/></a>
-            <a href="/" className="hover:text-blue-300"><Facebook/></a>
-            <a href="/" className="hover:text-blue-300"><Instagram/></a>
           </div>
         </div>
       </div>
-
-      {/* <div className="flex space-x-4 mt-5 mb-5 justify-center">
-          <a href="/" className="hover:text-blue-300"><Github/></a>
-          <a href="/" className="hover:text-blue-300"><Linkedin/></a>
-          <a href="/" className="hover:text-blue-300"><Twitter/></a>
-          <a href="/" className="hover:text-blue-300"><Facebook/></a>
-          <a href="/" className="hover:text-blue-300"><Instagram/></a>
-      </div> */}
 
       <div className="mt-4 flex items-center rounded-lg space-x-1">
         <div class="relative flex h-4 w-4">
@@ -53,7 +43,7 @@ export default function Hero() {
           <div class="relative inline-flex rounded-full h-4 w-4 bg-sky-500"></div>
         </div>
 
-        <a href="#contact" className="text-blue-400 font-semibold cursor-pointer">Available for freelance work</a>
+        <a href="#contact" className="text-blue-400 font-semibold cursor-pointer">Work with me...</a>
       </div>
     </section>
   )
