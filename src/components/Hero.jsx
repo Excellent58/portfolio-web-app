@@ -43,7 +43,7 @@ export default function Hero() {
           <div class="relative inline-flex rounded-full h-4 w-4 bg-sky-500"></div>
         </div>
 
-        <a href="#contact" className="text-blue-400 font-semibold cursor-pointer">Work with me...</a>
+        <a href="#contact" className="text-blue-400 font-semibold cursor-pointer">Hire me...</a>
       </div>
     </section>
   )
