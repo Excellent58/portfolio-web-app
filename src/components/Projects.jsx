@@ -58,7 +58,7 @@ export default function Projects() {
               <h2 className="text-lg font-bold text-blue-500">{project.title}</h2>
 
               <div className="flex flex-row justify-between">
-                <p className="text-sm text-blue-300">Python | Nextjs</p>
+                <p className="text-sm text-blue-300">Python | Nextjs |</p>
                 <div className="flex space-x-4">
                   <a href="/" className="hover:text-blue-400"><Github size={20}/></a>
                   <a href="/" className="hover:text-blue-400"><ExternalLink size={20}/></a>
