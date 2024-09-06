@@ -5,14 +5,14 @@ import devLog from "../assets/images/projects/devlog.png"
 import flaskBlog from "../assets/images/projects/flask_simple_blog.jpg"
 import uiLogs from "../assets/images/projects/uilogs.png"
 
-export default function Projects() {
-  const projects = [
+const projects = [
     {
       img: devLog,
       title: "devlog",
       desc: " A multi author blog. Built with Node.js, MongoDB, React, Redux and Tailwind CSS ",
       live: "https://devlogg.onrender.com/",
       code: "https://github.com/Coderamrin/devlog",
+      techStack: ['django', 'react']
     },
     {
       img: uiLogs,
@@ -20,6 +20,7 @@ export default function Projects() {
       desc: "Free website template directory for SaaS and Degital Agency. Built with Bootstrap, JQuery and JavaScript",
       live: "https://uilogs.xyz/",
       code: "https://github.com/Coderamrin/html-templates",
+      techStack: ['Nextjs', 'postgresql']
     },
     {
       img: cssProjects,
@@ -27,6 +28,7 @@ export default function Projects() {
       desc: "Frontend Mentor challange directory, solved with vanilla CSS",
       live: "https://build-10-css-projects.netlify.app/",
       code: "https://github.com/Coderamrin/build-10-css-projects",
+      techStack: ['django', 'reactjs']
     },
     {
       img: flaskBlog,
@@ -34,8 +36,11 @@ export default function Projects() {
       desc: "This is a simple blog site built using flask, python and bootstrap.",
       live: "https://excellent99.pythonanywhere.com/",
       code: "https://github.com/Excellent58/flask-app-01",
+      techStack: ['flask', 'react']
     },
   ];
+
+export default function Projects() {
 
   return (
     <section className="m-6 mt-28" id='projects'>
@@ -57,11 +62,15 @@ export default function Projects() {
             <div className="flex flex-col m-1">
               <h2 className="text-lg font-bold text-blue-500">{project.title}</h2>
 
-              <div className="flex flex-row justify-between">
-                <p className="text-sm text-blue-300">Python | Nextjs |</p>
+              <div className="flex gap-1 justify-between">
+                <div className="flex gap-1">
+                {project.techStack.map((tech, i) => (
+                  <p className="text-sm text-blue-300 bg-slate-900 p-1 rounded-lg" key={i}>{tech}</p>
+                ))}
+                </div>
                 <div className="flex space-x-4">
                   <a href="/" className="hover:text-blue-400"><Github size={20}/></a>
-                  <a href="/" className="hover:text-blue-400"><ExternalLink size={20}/></a>
+                  <a href="/" className="hover:'text-blue-400"><ExternalLink size={20}/></a>
                 </div>
               </div>
             </div>
