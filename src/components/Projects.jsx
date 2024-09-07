@@ -65,12 +65,12 @@ export default function Projects() {
               <div className="flex gap-1 justify-between">
                 <div className="flex gap-1">
                 {project.techStack.map((tech, i) => (
-                  <p className="text-sm text-blue-300 bg-slate-900 p-1 rounded-lg" key={i}>{tech}</p>
+                  <p className="text-sm text-slate-300" key={i}>{tech} |</p>
                 ))}
                 </div>
                 <div className="flex space-x-4">
-                  <a href="/" className="hover:text-blue-400"><Github size={20}/></a>
-                  <a href="/" className="hover:'text-blue-400"><ExternalLink size={20}/></a>
+                  <a href={project.code} className="hover:text-blue-400"><Github size={20}/></a>
+                  <a href={project.live} className="hover:'text-blue-400"><ExternalLink size={20}/></a>
                 </div>
               </div>
             </div>
