@@ -38,7 +38,7 @@ const projects = [
       code: "https://github.com/Excellent58/flask-app-01",
       techStack: ['flask', 'react']
     },
-  ];
+];
 
 export default function Projects() {
 

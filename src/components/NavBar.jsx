@@ -25,21 +25,21 @@ export default function NavBar() {
   }, [MobileMenuOpen])
 
   return (
-    <header className='inset-x-0 top-0 z-50'>
-      <nav className='flex items-center justify-between h-16 lg:px-8'>
+    <header className='fixed top-0 z-50 left-0 right-0 bg-slate-900'>
+      <nav className='flex items-center justify-between border-b border-slate-800 h-16 lg:px-8'>
         <div className='ml-5 lg:ml-0'>
           <a href="/" className='font-signature font-bold'>
             Wycliffe Musau
           </a>
         </div>
 
-        <div className={MobileMenuOpen ? 'fixed bg-slate-800 top-16 flex flex-col w-full h-screen z-50' : 'space-x-10 lg:space-x-20 hidden sm:flex nav-link pr-2'}>
+        <div className={MobileMenuOpen ? 'fixed bg-slate-900 top-16 flex flex-col w-full h-screen z-50' : 'space-x-10 lg:space-x-20 hidden sm:flex nav-link pr-2'}>
           {navigation.map((item) => (
             <a
               key={item.name}
               href={item.href}
               onClick={()=> setMobileMenuOpen(false)}
-              className={`font-semibold ${MobileMenuOpen ? 'p-2 border-b border-gray-900 hover:bg-gray-900 hover:text-slate-300' : ''}`}
+              className={`font-semibold ${MobileMenuOpen ? 'p-3 border-b flex justify-center border-slate-800 hover:bg-gray-800 hover:text-slate-300' : ''}`}
             >
               {item.name}
             </a>
