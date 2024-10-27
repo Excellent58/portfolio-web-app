@@ -49,7 +49,7 @@ export default function Projects() {
 
       <div className="container mt-10 mx-auto grid place-content-center md:grid-cols-3 gap-10">
         {projects.map((project, i) => (
-          <div className="border-4 border-slate-900 max-w-[350px] rounded-md" key={i}>
+          <div className="border-4 border-slate-900 max-w-[350px] rounded-md h-full" key={i}>
             <div className="h-[200px]">
               <img 
                 src={project.img} 
