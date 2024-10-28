@@ -43,7 +43,7 @@ const projects = [
 export default function Projects() {
 
   return (
-    <section className="m-6 mt-28" id='projects'>
+    <section className="m-6 mt-28 flex flex-row" id='projects'>
       <h2 className="font-bold text-lg text-blue-400">Projects</h2>
       <p className="text-blue-300 mt-5">Some of projects i have built....</p>
 
